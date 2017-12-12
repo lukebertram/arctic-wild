@@ -1,0 +1,53 @@
+.hero {
+  background-image: url('../img/hero-slide1.jpg');
+  background-position: center;
+  height: 500px;
+  padding: 4vw;
+}
+
+.hero-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // padding: 0 50px;
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    h3 {
+      font-family: 'Abril Fatface', cursive;
+      text-transform: uppercase;
+      font-size: 2em;
+    }
+    .nav-logo-img {
+      height: 60px;
+    }
+  }
+  .nav-link{
+    display: none;
+  }
+  .hamburger {
+    font-size: 3em;
+    color: white;
+  }
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h4 {
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    margin: 0;
+  }
+  h1 {
+    font-family: 'Abril Fatface', cursive;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 4em;
+    margin-top: 0;
+  }
+  .icon-alaska {
+  }
+}
