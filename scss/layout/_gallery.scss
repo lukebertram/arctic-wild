@@ -1,0 +1,76 @@
+.gallery{
+  width: 100vw;
+  background: $gallery-bg-color;
+}
+
+.gallery-header{
+  display: none;
+}
+
+.img-gallery{
+  padding: $gallery-padding;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  height: 250px;
+  width: 100%;
+  background-color: #333;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: $gallery-padding;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  position: relative;
+  padding: $card-padding;
+  .card-text{
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.3em;
+  }
+  .card-icon{
+    background-color: $icon-bg-color;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    img{
+      position: absolute;
+      height: 35px;
+      width: auto;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+  .orange-line {
+    height: 5px;
+    width: 40px;
+    background-color: $trip-sep-color;
+    margin-bottom: 15px;
+  }
+}
+#card1{
+  background-image: url('../img/rafting.jpg');
+}
+#card2{
+  background-image: url('../img/basecamp.jpg');
+}
+#card3{
+  background-image: url('../img/backpack.jpg');
+}
+#card4{
+  background-image: url('../img/canoe.jpg');
+}
+#card5{
+  background-image: url('../img/photo.jpg');
+}
+#card6{
+  background-image: url('../img/custom.jpg');
+}

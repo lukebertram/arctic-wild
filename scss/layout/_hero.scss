@@ -1,11 +1,13 @@
 .hero {
   background-image: url('../img/hero-slide1.jpg');
+  background-size: cover;
   background-position: center;
   height: 500px;
-  padding: 4vw;
+  padding: 15px 2vw 0;
 }
 
 .hero-nav {
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,40 +16,71 @@
     display: flex;
     align-items: center;
     h3 {
-      font-family: 'Abril Fatface', cursive;
+      font-family: 'Playfair Display', serif;
+      font-weight: 200;
       text-transform: uppercase;
-      font-size: 2em;
+      font-size: 1.2em;
     }
     .nav-logo-img {
-      height: 60px;
+      height: 40px;
+      margin-right: -20px;
+      margin-left: -20px;
     }
   }
   .nav-link{
     display: none;
   }
   .hamburger {
-    font-size: 3em;
+    font-size: 2.5em;
     color: white;
   }
 }
 
 .title {
+  margin-top: 30px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   h4 {
     font-family: 'Fjalla One', sans-serif;
+    font-size: .7em;
     text-transform: uppercase;
-    letter-spacing: .5em;
+    letter-spacing: .4em;
     margin: 0;
   }
   h1 {
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Playfair Display', serif;
     text-transform: uppercase;
     font-weight: 200;
-    font-size: 4em;
+    font-size: 3em;
     margin-top: 0;
+    margin-bottom: 20px;
   }
-  .icon-alaska {
+
+  .hero-hr{
+    width: 250px;
+    height: 5px;
+    background: white;
+  }
+}
+
+.explore-bubble {
+  display: none;
+}
+
+.play-button {
+  position: relative;
+  background: rgba(225,225,225,0.5);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  .press-play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-40%,-50%);
+    height: 35px;
   }
 }
