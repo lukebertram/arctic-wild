@@ -110,4 +110,22 @@
   #card6{
     grid-column: 3 / 5;
   }
+  .gallery-header {
+    display: flex;
+    justify-content: space-between;
+    background-image: url('../img/bg-categorynav.jpg');
+    height: 80px;
+    // padding: 0 50px 0 0;
+    .gallery-nav {
+      display: flex;
+      justify-content: space-between;
+      align-self: center;
+      width: 40%;
+      padding: 0 10px 0 50px;
+    }
+    .btn {
+      background: none;
+      border: none;
+    }
+  }
 }

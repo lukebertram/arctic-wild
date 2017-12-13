@@ -113,13 +113,31 @@ html, body {
     grid-column: 1 / 3; }
 
   #card6 {
-    grid-column: 3 / 5; } }
+    grid-column: 3 / 5; }
+
+  .gallery-header {
+    display: flex;
+    justify-content: space-between;
+    background-image: url("../img/bg-categorynav.jpg");
+    height: 80px; }
+    .gallery-header .gallery-nav {
+      display: flex;
+      justify-content: space-between;
+      align-self: center;
+      width: 40%;
+      padding: 0 10px 0 50px; }
+    .gallery-header .btn {
+      background: none;
+      border: none; } }
 .hero {
   background-image: url("../img/hero-slide1.jpg");
   background-size: cover;
   background-position: center;
   height: 500px;
   padding: 15px 2vw 0; }
+  @media screen and (min-width: 961px) {
+    .hero {
+      height: 100vh; } }
 
 .hero-nav {
   margin-top: 10px;
